@@ -1,0 +1,15 @@
+{
+  "name": "fly.io",
+  "builds": [
+    {
+      "src": "./app.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
